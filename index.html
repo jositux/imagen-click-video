@@ -7,18 +7,24 @@
 </head>
 
 <body>
-<div id="youtube" style="display:none;">
-   <iframe width="853" height="480" src="" wmode="transparent" frameborder="0" allowfullscreen></iframe>
- </div>
 
-<img src="imagen.png" width="853" height="480" id="imageID" />
+	<h2> Click Para Ver Video </h2>
 
-<script type="text/javascript">
-$(function(){
-  $('#imageID').click(function() {
-    $('#youtube').show().find("iframe").attr("src","https://www.youtube.com/embed/kKOoz7qyVYo?rel=0&showinfo=0&autoplay=1");
-    $(this).hide();
-  });
-});
-</script>
+	<div id="youtube" style="display:none;">
+	   <iframe width="853" height="480" src="" wmode="transparent" frameborder="0" allowfullscreen></iframe>
+	 </div>
+	 
+	<img src="imagen.png" title="click para ver video" width="853" height="480" id="imageID" style="cursor: pointer;"/>
+
+	<script type="text/javascript">
+	$(function(){
+	  $('#imageID').click(function() {
+		$('#youtube').show().find("iframe").attr("src","https://www.youtube.com/embed/kKOoz7qyVYo?rel=0&showinfo=0&autoplay=1");
+		$(this).hide();
+	  });
+	});
+	</script>
+	
 </body>
+
+</html>
