@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Imagen Click Video</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+<div id="youtube" style="display:none;">
+   <iframe width="853" height="480" src="" wmode="transparent" frameborder="0" allowfullscreen></iframe>
+ </div>
+
+<img src="imagen.png" width="853" height="480" id="imageID" />
+
+<script type="text/javascript">
+$(function(){
+  $('#imageID').click(function() {
+    $('#youtube').show().find("iframe").attr("src","https://www.youtube.com/embed/kKOoz7qyVYo?rel=0&showinfo=0&autoplay=1");
+    $(this).hide();
+  });
+});
+</script>
+</body>
